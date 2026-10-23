@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}
+
+html,body{
+margin:0;
+min-height:100%;
+background:#0b1422;
+font-family:'DM Sans',Inter,system-ui,sans-serif
+}
+
+body{
+background-image:radial-gradient(ellipse at 82% -10%,#17273a 0,transparent 38%)
+}
+
+button,select{
+font:inherit
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+}
+
+.nav-item:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
